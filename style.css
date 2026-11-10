@@ -379,7 +379,9 @@ main {
   border-bottom: 1px solid var(--border);
 }
 .edu-list li:last-child, .simple-list li:last-child { border-bottom: 0; }
+.simple-list li { grid-template-columns: 6.6rem 1fr; }
 .edu-year, .simple-year {
+  white-space: nowrap;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
   font-size: .92rem;
@@ -518,7 +520,8 @@ body.lb-open { overflow: hidden; }
   .card-media img { height: auto; }
   .card .card-body { padding: 1.1rem 1.2rem 1.3rem; }
 
-  .edu-list li, .simple-list li { grid-template-columns: 3.6rem 1fr; gap: .75rem; }
+  .edu-list li { grid-template-columns: 3.6rem 1fr; gap: .75rem; }
+  .simple-list li { grid-template-columns: 6.2rem 1fr; gap: .75rem; }
   .pub { grid-template-columns: 2.9rem 1fr; gap: .8rem; }
 
   .lightbox { padding: 3rem 1rem 1rem; }
